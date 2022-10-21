@@ -16,7 +16,7 @@ class Scanner extends StatefulWidget {
   /// clickToCapture to show a button to capture a Data URL for the image
   final bool clickToCapture;
 
-  const Scanner({this.onScan, this.clickToCapture = false, key}) : super(key: key);
+  const Scanner({required this.onScan, this.clickToCapture = false, key}) : super(key: key);
 
   @override
   _ScannerState createState() => _ScannerState();
