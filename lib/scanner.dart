@@ -196,7 +196,7 @@ class _ScannerState extends State<Scanner> {
         ctx.getImageData(0, 0, canvas.width!, canvas.height!);
     // print(imgData);
     var code = jsQR(imgData.data, canvas.width, canvas.height);
-    // print("CODE: $code");
+    print("CODE: $code");
     if (code != null) {
       print(code.data);
       this.code = code.data;
