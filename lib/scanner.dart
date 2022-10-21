@@ -108,7 +108,7 @@ class _ScannerState extends State<Scanner> {
   void dispose() {
     print("Scanner.dispose");
     cancel();
-    // super.dispose();
+    super.dispose();
   }
 
   // Platform messages are asynchronous, so we initialize in an async method.
@@ -200,7 +200,7 @@ class _ScannerState extends State<Scanner> {
     if (code != null) {
       print(code.data);
       this.code = code.data;
-      Navigator.pop(context, this.code);
+      // Navigator.pop(context, this.code);
       return this.code;
     } else {
       Timer(Duration(milliseconds: 500), () {
