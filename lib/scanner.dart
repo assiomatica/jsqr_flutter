@@ -55,7 +55,7 @@ class _ScannerState extends State<Scanner> {
 
   @override
   void initState() {
-    print("MY SCANNER initState");
+    print("Assiomatica initState");
     super.initState();
     video = html.VideoElement();
     // canvas = new html.CanvasElement(width: );
