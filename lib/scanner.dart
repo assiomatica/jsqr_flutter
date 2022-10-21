@@ -204,7 +204,7 @@ class _ScannerState extends State<Scanner> {
       print(code.data);
       if (null != widget.onScan) {
           // Raise the event
-          widget.onScan(code);
+          widget.onScan(code.data);
         }
       this.code = code.data;
       // Navigator.pop(context, this.code);
