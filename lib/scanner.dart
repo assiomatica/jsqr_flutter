@@ -205,10 +205,13 @@ class _ScannerState extends State<Scanner> {
       if (null != widget.onScan) {
           // Raise the event
           widget.onScan(code.data);
+              Timer(Duration(milliseconds: 500), () {
+                _captureFrame2();
+              });
         }
-      this.code = code.data;
+      // this.code = code.data;
       // Navigator.pop(context, this.code);
-      return this.code;
+      // return this.code;
     } else {
       Timer(Duration(milliseconds: 500), () {
         _captureFrame2();
