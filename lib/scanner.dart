@@ -10,6 +10,10 @@ import 'jsqr.dart';
 import 'media.dart';
 
 class Scanner extends StatefulWidget {
+  
+  Scanner({this.onScan});
+  final Function onScan;
+    
   /// clickToCapture to show a button to capture a Data URL for the image
   final bool clickToCapture;
 
@@ -199,6 +203,10 @@ class _ScannerState extends State<Scanner> {
     print("CODE: $code");
     if (code != null) {
       print(code.data);
+      if (null != widget.onScan) {
+          // Raise the event
+          widget.onScan();
+        }
       this.code = code.data;
       // Navigator.pop(context, this.code);
       return this.code;
