@@ -108,7 +108,7 @@ class _ScannerState extends State<Scanner> {
   void dispose() {
     print("Scanner.dispose");
     cancel();
-    super.dispose();
+    // super.dispose();
   }
 
   // Platform messages are asynchronous, so we initialize in an async method.
