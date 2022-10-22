@@ -52,7 +52,7 @@ class _ScannerState extends State<Scanner> {
   Timer? timer;
   String? code;
   String? _errorMsg;
-  var front = false;
+  var front = true;
   var video;
   String viewID = "your-view-id";
 
